@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='E:\pyramid_pro'
+VIRTUAL_ENV='E:\pyramid_project'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

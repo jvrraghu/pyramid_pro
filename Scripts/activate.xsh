@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"E:\pyramid_pro"
+$VIRTUAL_ENV = r"E:\pyramid_project"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

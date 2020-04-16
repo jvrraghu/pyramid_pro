@@ -3,11 +3,11 @@ from pyramid.config import Configurator
 from pyramid.response import Response
 
 def hello_world(request):
-    # return Response("Hello World!")
     val_a = 3
     val_b = 2 
     total = val_a+val_b
-    return Response(total)
+    return Response(str(total))
+    # return Response("Hello World!")
 
 if __name__ == '__main__':
     with Configurator() as config:
