@@ -2,7 +2,7 @@
 FROM ubuntu:16.04
 FROM python:3.7
 
-RUN apt-get install -y update
+RUN apt-get update
 
 RUN apt-get install -y python-pip 
 
