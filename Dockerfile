@@ -2,9 +2,13 @@
 FROM ubuntu:16.04
 FROM python:3.7
 
-RUN mkdir -p ~/ws/pyramid/ && virtualenv $work_dir && source  $work_dir/bin/activate && pip install --upgrade pip && pip install pyramid==1.10.4
+RUN apt-get install -y update
 
-WORKDIR ~/ws/pyramid/
+RUN apt-get install -y python-pip 
+
+RUN virtualenv pyramid
+
+RUN /bin/bash -c "source /pyramid/bin/activate" && pip install pyramid==1.10.4
 
 ADD app.py app.py
 
